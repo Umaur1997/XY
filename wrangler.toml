@@ -1,6 +1,8 @@
 name = "xyzw-web-helper"
 compatibility_date = "2023-12-01"
+pages_build_output_dir = "./dist"
 
-[pages_build_config]
-build_command = "npm run build"
-destination_dir = "dist"
+[[durable_objects.bindings]]
+name = "GAME_SESSION"
+class_name = "GameSession"
+script_name = "xyzw-do-worker"
